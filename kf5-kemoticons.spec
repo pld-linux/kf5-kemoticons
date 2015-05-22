@@ -5,18 +5,18 @@
 # /usr/share/emoticons/Glass
 # /usr/share/kservices5
 # /usr/share/kservicetypes5
-%define		kdeframever	5.4
+%define		kdeframever	5.10
 %define		qtver		5.3.2
 %define		kfname		kemoticons
 
 Summary:	Convert text emoticons to graphical emoticons
 Name:		kf5-%{kfname}
-Version:	5.4.0
+Version:	5.10.0
 Release:	0.1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	e60297bc97347d794b65624bfc4b2c05
+# Source0-md5:	68860ec9f2ef32b3d2a5ed9b61b0ae17
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
@@ -83,8 +83,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.md
 %attr(755,root,root) %ghost %{_libdir}/libKF5Emoticons.so.5
-%attr(755,root,root) %{_libdir}/libKF5Emoticons.so.5.4.0
+%attr(755,root,root) %{_libdir}/libKF5Emoticons.so.*.*
 %dir %{qt5dir}/plugins/kf5/emoticonsthemes
+%attr(755,root,root) %{qt5dir}/plugins/kf5/KEmoticonsIntegrationPlugin.so
 %attr(755,root,root) %{qt5dir}/plugins/kf5/emoticonsthemes/adium.so
 %attr(755,root,root) %{qt5dir}/plugins/kf5/emoticonsthemes/kde.so
 %attr(755,root,root) %{qt5dir}/plugins/kf5/emoticonsthemes/pidgin.so
