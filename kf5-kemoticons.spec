@@ -1,15 +1,15 @@
-%define		kdeframever	5.10
+%define		kdeframever	5.13
 %define		qtver		5.3.2
 %define		kfname		kemoticons
 
 Summary:	Convert text emoticons to graphical emoticons
 Name:		kf5-%{kfname}
-Version:	5.10.0
+Version:	5.13.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	68860ec9f2ef32b3d2a5ed9b61b0ae17
+# Source0-md5:	00507676a628255bd76d3ed418eafc91
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
@@ -88,48 +88,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kservices5/emoticonstheme_pidgin.desktop
 %{_datadir}/kservices5/emoticonstheme_xmpp.desktop
 %{_datadir}/kservicetypes5/kemoticonsTheme.desktop
-%{_datadir}/emoticons/Glass/angry.png
-%{_datadir}/emoticons/Glass/bat.png
-%{_datadir}/emoticons/Glass/beer.png
-%{_datadir}/emoticons/Glass/biggrin.png
-%{_datadir}/emoticons/Glass/cake.png
-%{_datadir}/emoticons/Glass/camera.png
-%{_datadir}/emoticons/Glass/cat.png
-%{_datadir}/emoticons/Glass/clock.png
-%{_datadir}/emoticons/Glass/cocktail.png
-%{_datadir}/emoticons/Glass/confused.png
-%{_datadir}/emoticons/Glass/cry.png
-%{_datadir}/emoticons/Glass/cup.png
-%{_datadir}/emoticons/Glass/dog.png
-%{_datadir}/emoticons/Glass/email.png
-%{_datadir}/emoticons/Glass/embarassed.png
-%{_datadir}/emoticons/Glass/emoticons.xml
-%{_datadir}/emoticons/Glass/film.png
-%{_datadir}/emoticons/Glass/foot_in_mouth.png
-%{_datadir}/emoticons/Glass/innocent.png
-%{_datadir}/emoticons/Glass/kiss.png
-%{_datadir}/emoticons/Glass/lightbulb.png
-%{_datadir}/emoticons/Glass/love.png
-%{_datadir}/emoticons/Glass/note.png
-%{_datadir}/emoticons/Glass/oh.png
-%{_datadir}/emoticons/Glass/omg.png
-%{_datadir}/emoticons/Glass/phone.png
-%{_datadir}/emoticons/Glass/present.png
-%{_datadir}/emoticons/Glass/rose.png
-%{_datadir}/emoticons/Glass/sad.png
-%{_datadir}/emoticons/Glass/shade.png
-%{_datadir}/emoticons/Glass/sleep.png
-%{_datadir}/emoticons/Glass/smile.png
-%{_datadir}/emoticons/Glass/star.png
-%{_datadir}/emoticons/Glass/teeth.png
-%{_datadir}/emoticons/Glass/thumbs_down.png
-%{_datadir}/emoticons/Glass/thumbs_up.png
-%{_datadir}/emoticons/Glass/tongue.png
-%{_datadir}/emoticons/Glass/undecided.png
-%{_datadir}/emoticons/Glass/unhappy.png
-%{_datadir}/emoticons/Glass/unlove.png
-%{_datadir}/emoticons/Glass/wilted_rose.png
-%{_datadir}/emoticons/Glass/wink.png
+%{_datadir}/emoticons/Breeze
+%{_datadir}/emoticons/Glass
 
 %files devel
 %defattr(644,root,root,755)
