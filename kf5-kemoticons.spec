@@ -1,15 +1,15 @@
-%define		kdeframever	5.19
+%define		kdeframever	5.23
 %define		qtver		5.3.2
 %define		kfname		kemoticons
 
 Summary:	Convert text emoticons to graphical emoticons
 Name:		kf5-%{kfname}
-Version:	5.19.0
+Version:	5.23.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	9126afb4d6d54090f0b72ff08f396d96
+# Source0-md5:	0e56a38f94975ff508536206f9a3fcb9
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
@@ -28,6 +28,7 @@ BuildRequires:	kf5-ki18n-devel >= %{version}
 BuildRequires:	kf5-kservice-devel >= %{version}
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
+Requires:	kf5-dirs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		qt5dir		%{_libdir}/qt5
@@ -89,7 +90,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kservices5/emoticonstheme_xmpp.desktop
 %{_datadir}/kservicetypes5/kemoticonsTheme.desktop
 %{_datadir}/emoticons/Breeze
+%{_datadir}/emoticons/EmojiOne
 %{_datadir}/emoticons/Glass
+%{_datadir}/emoticons/Konqi
 
 %files devel
 %defattr(644,root,root,755)
