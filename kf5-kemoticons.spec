@@ -91,7 +91,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kservicetypes5/kemoticonsTheme.desktop
 %{_datadir}/emoticons/Breeze
 %{_datadir}/emoticons/EmojiOne
-%{_datadir}/emoticons/Glass
+#%%{_datadir}/emoticons/Glass
 %{_datadir}/emoticons/Konqi
 
 %files devel
