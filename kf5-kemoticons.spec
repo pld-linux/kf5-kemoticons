@@ -1,15 +1,15 @@
-%define		kdeframever	5.59
+%define		kdeframever	5.62
 %define		qtver		5.9.0
 %define		kfname		kemoticons
 
 Summary:	Convert text emoticons to graphical emoticons
 Name:		kf5-%{kfname}
-Version:	5.59.0
+Version:	5.62.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	2d8c1d5a97cea381b75ffebf8f77afbb
+# Source0-md5:	55d439f01336a686329b97496a15a7e7
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README.md
-/etc/xdg/kemoticons.categories
+%{_datadir}/qlogging-categories5/kemoticons.categories
 %attr(755,root,root) %ghost %{_libdir}/libKF5Emoticons.so.5
 %attr(755,root,root) %{_libdir}/libKF5Emoticons.so.*.*
 %dir %{qt5dir}/plugins/kf5/emoticonsthemes
