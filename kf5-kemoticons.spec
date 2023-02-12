@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	5.102
+%define		kdeframever	5.103
 %define		qtver		5.15.2
 %define		kfname		kemoticons
 
 Summary:	Convert text emoticons to graphical emoticons
 Name:		kf5-%{kfname}
-Version:	5.102.0
+Version:	5.103.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	bddff6815f3bd52897c21c9f33b1c827
+# Source0-md5:	e04acd0fc6e2702aa7c16b219603cdfa
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
